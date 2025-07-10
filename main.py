@@ -12,7 +12,7 @@ rack_to_node = {
 # First letter (A–D) to RACK name
 letter_to_rack = {"A": "RACK 1", "B": "RACK 2", "C": "RACK 3", "D": "RACK 4"}
 
-ESP_IP = "http://10.204.117.20"  # Update if needed
+ESP_IP = "http://"  # Update if needed
 
 def send_node_to_esp(rack_id):
     try:
