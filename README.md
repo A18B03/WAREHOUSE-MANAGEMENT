@@ -34,16 +34,5 @@ This project is a smart warehouse automation system that uses **RFID** and a **l
 - **Python (Tkinter)** – GUI for rack management(view logs,scan,find,validation).
 - **Serial Communication / HTTP** – Between ESP8266 and Arduino
 
----
 
-## 📐 System Architecture
-
-```mermaid
-flowchart LR
-    User -- RFID Scan --> GUI
-    GUI -- WiFi/HTTP --> ESP8266
-    ESP8266 -- Serial --> Arduino
-    Arduino -- IR Sensors --> Node Detection
-    Arduino --> Motors --> Move to Rack
-   
 
