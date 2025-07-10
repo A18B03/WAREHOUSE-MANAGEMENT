@@ -5,8 +5,8 @@
 // RX = D5 (receives from Arduino TX), TX = D6 (sends to Arduino RX)
 SoftwareSerial robotSerial(D5, D6);  
 
-const char* ssid = "TestESP";       // 🔁 Change if needed
-const char* password = "12345678";  // 🔁 Change if needed
+const char* ssid = "your wifi";       // 🔁 Change if needed
+const char* password = "your password";  // 🔁 Change if needed
 
 ESP8266WebServer server(80);
 String latestStatus = "🔄 Waiting for robot...";
