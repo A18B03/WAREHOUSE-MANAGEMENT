@@ -15,11 +15,11 @@ rack_to_node = {
 
 import requests
 
-ESP_IP = "http://10.204.117.20"  # Replace with actual ESP IP
+ESP_IP = "http://"  # Replace with actual ESP IP
 
 def poll_robot_status():
     try:
-        response = requests.get("http://10.204.117.20/status", timeout=2)
+        response = requests.get("http:///status", timeout=2)
         if response.status_code == 200:
             robot_status.set("🤖 Robot: " + response.text)
     except:
